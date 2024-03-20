@@ -37,21 +37,26 @@ Play a song in your music player and observe it being shared as an activity on D
 Here is a table of supported music players, streaming services
 or other media sources on each operating system:
 
-| Player | Windows | Mac OS | Linux |
+| Player | Windows | Mac OS | Linux<sup>3</sup> |
 |:-|:-:|:-:|:-:|
-| TIDAL | :heavy_check_mark: | :heavy_check_mark: | :memo: |
+| TIDAL | :white_check_mark: | :white_check_mark: | :memo:<sup>4</sup> |
 | Qobuz | :memo: | :memo: | :x: |
-| Desktop Media\* | :memo: | ... | ... |
-| Browser Media\*\* | ... | ... | ... |
+| Desktop Media<sup>1</sup> | :memo: | ... | ... |
+| Browser Media<sup>2</sup> | ... | ... | ... |
 | Spotify | ... | ... | ... |
 
-\* *Selected media played on your desktop,
-independent of the source. Work in progress*  
-\*\* *Selected media played in your browser*
+<sup>1</sup> *Selected media played on your desktop,
+independent of the source*  
+<sup>2</sup> *Selected media played in your browser*  
+<sup>3</sup> *Does not work with
+[Discord from the Snap Store](https://snapcraft.io/discord) yet*  
+<sup>4</sup> *Only works with the
+[TIDAL Hi-Fi](https://github.com/Mastermindzh/tidal-hifi)
+desktop application for now*
 
 ### Legend
 
-- :heavy_check_mark: Supported
+- :white_check_mark: Supported
 - :x: Likely no support in the future
 - :memo: Support is being worked on and will likely arrive soon
 - Three dots indicate that support might be added at some point in the future,
