@@ -31,6 +31,8 @@
 #include "windows_api_hook.hh"
 #elif defined(__APPLE__) or defined(__MACH__)
 #include "osx_api_hook.hh"
+#elif defined(__linux__)
+#include "linux_api_hook.hh"
 #else
 #error "Not supported target"
 #endif

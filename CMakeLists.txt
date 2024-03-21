@@ -12,7 +12,13 @@ set(CMAKE_AUTOUIC ON)
 
 
 # Find the QtWidgets library
-find_package(Qt6 COMPONENTS Widgets Core Network gui REQUIRED)
+if (UNIX)
+    find_package(Qt6 COMPONENTS Widgets Core Network REQUIRED)
+else ()
+    # TODO: check if Windows and macOS really need "gui".
+    find_package(Qt6 COMPONENTS Widgets Core Network gui REQUIRED)
+endif ()
+
 #set(CMAKE_CXX_FLAGS_COVERAGE "${CMAKE_CXX_FLAGS_RELEASE} -fprofile-arcs -ftest-coverage")
 qt6_add_resources(QRCS resources/resources.qrc)
 add_executable(discord-music-presence src/main.cc resources/resource.rc ${QRCS})
@@ -93,4 +99,8 @@ elseif (APPLE)
             MACOSX_PACKAGE_LOCATION "Resources")
 
     target_sources(discord-music-presence PRIVATE ${app_icon_macos})
+
+elseif (UNIX)
+    message("Building for Unix")
+    target_link_libraries(discord-music-presence ${CMAKE_SOURCE_DIR}/vendor/discord_game_sdk/lib/x86_64/libdiscord.so)
 endif ()

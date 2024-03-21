@@ -42,7 +42,16 @@ by adding the "variables" key to each of your configurations
 
 ## Linux
 
-*TODO*
+### Visual Studio Code
+
+1. Clone the project from version control and open it with Visual Studio Code.
+2. Install the recommended extensions for C++ development with CMake.
+They are listed in the `.vscode/extensions.json` file.
+3. Install Qt6 release and development files for your distribution,
+e.g. on Ubuntu: `sudo apt install qt6-base-dev`.
+4. If `vendor/discord_game_sdk/lib/libdiscord` does not exist builds will fail.
+In that case read instructions in `vendor/discord_game_sdk/README.md`.
+
 
 ## Making a release
 
