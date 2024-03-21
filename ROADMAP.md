@@ -100,6 +100,29 @@ But it would need to work across platforms.
 - Create a Windows installer/signed exe (?)
 - Automatic updates?
 
+### Issues
+
+The Discord Game SDK does not work
+with Discord running in a sandboxed Snap environment (Snap Store),
+since it tries to communicate with the local Discord client
+by opening it's binary and opening some custom url (?).
+Instead, we could connect to the Discord client's localhost RPC gateway
+and control the activity/status through that.
+The command `nmap -p6463-6472 localhost` shows
+that even with the Snap version Discord exposes a local gateway API.
+We should just use this: https://github.com/discord/discord-rpc
+(it's not deprecated).
+The source is public, it's MIT license and it can be built with CMake.
+
+Desktop Media access.
+- Windows - WinRT
+  - https://devblogs.microsoft.com/oldnewthing/20231108-00/?p=108980
+- Mac OS - Media Remote private framework
+  - https://stackoverflow.com/questions/61003379/how-to-get-currently-playing-song-on-mac-swift
+  - https://www.swift.org/documentation/cxx-interop/#exposing-swift-apis-to-c
+- Linux - playerctl
+  - https://github.com/altdesktop/playerctl
+
 ### Quality improvements
 
 - When starting a song, with the presence just activating,
