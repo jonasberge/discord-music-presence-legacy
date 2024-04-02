@@ -3,6 +3,9 @@
 [![GitHub Release Downloads](https://img.shields.io/github/downloads/jonasberge/discord-music-presence/total?style=flat)](https://github.com/jonasberge/discord-music-presence/releases)
 [![GitHub Sponsor](https://img.shields.io/badge/sponsor-30363D?style=flat&logo=GitHub-Sponsors)](https://github.com/sponsors/jonasberge)
 
+> Track the progress on the next release here:  
+[Complete rewrite to support media from any application on the user's device](https://github.com/jonasberge/discord-music-presence/issues/2)
+
 # Discord Music Presence
 
 This is a desktop application to share your listening activity
