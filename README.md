@@ -1,3 +1,4 @@
+[![Discord](https://img.shields.io/discord/1224509771068211292?logo=discord&logoColor=eee&label=Discord&labelColor=464ce5)](https://discord.gg/ShVUZCW5a2)
 [![Build status](https://ci.appveyor.com/api/projects/status/bthj30lvfthw9es0?svg=true)](https://ci.appveyor.com/project/jonasberge/discord-music-presence)
 [![GitHub Release Downloads](https://img.shields.io/github/downloads/jonasberge/discord-music-presence/total?style=flat)](https://github.com/jonasberge/discord-music-presence/releases)
 [![GitHub Sponsor](https://img.shields.io/badge/sponsor-30363D?style=flat&logo=GitHub-Sponsors)](https://github.com/sponsors/jonasberge)
