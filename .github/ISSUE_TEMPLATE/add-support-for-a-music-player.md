@@ -1,5 +1,5 @@
 ---
-name: Please add support for a music player
+name: Add support for a music player
 about: Request support for a media player
 title: ''
 labels: players
